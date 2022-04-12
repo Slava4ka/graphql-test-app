@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'rickandmorty';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/roiland-sans-webfont.woff2') format('woff2'), url('../fonts/roiland-sans-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'kinda-rickandmorty';
+  font-style: normal;
+  src: url(../fonts/kinda-rickandmorty-regular-webfont.woff2) format('woff2'), url('../fonts/kinda-rickandmorty-regular-webfont.woff') format('woff');
+  unicode-range: U+28-39;
+}
+
+@font-face {
+  font-family: 'GrapeNuts';
+  src: local('Lato'), url(../fonts/GrapeNuts-Regular.ttf) format('opentype');
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  vertical-align: baseline;
+  background: rgb(255, 255, 255);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+  height: 100%;
+  overflow: auto;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 1.4;
+  background: rgb(255, 255, 255);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-variant-ligatures: no-common-ligatures;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+#root {
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-flow: row;
+}
+
+h1, h2, h3, h4, h6 {
+  line-height: 1.2;
+}
+
+h2, h3, h4, h6 {
+  font-family: Avenir-Roman, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 1.75rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 900;
+}
